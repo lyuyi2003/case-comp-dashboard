@@ -22,6 +22,10 @@ const Rules = (() => {
     return dayNumber(iso) - dayNumber(today);
   }
 
+  function addDays(iso, days) {
+    return new Date((dayNumber(iso) + days) * MS_PER_DAY).toISOString().slice(0, 10);
+  }
+
   // Today's date in Singapore, wherever the page is opened.
   function todayInSingapore(now = new Date()) {
     return new Intl.DateTimeFormat("en-CA", { timeZone: SINGAPORE }).format(now);
@@ -104,6 +108,7 @@ const Rules = (() => {
   return {
     DATE_FIELDS,
     MAIN_PHASE_FIELDS,
+    addDays,
     computeStatus,
     dayNumber,
     daysUntil,

@@ -41,6 +41,7 @@ PROTECTED_FIELDS = COMPUTED_FIELDS | MANAGED_FIELDS
 
 # What a new record starts with, for any field it leaves out.
 RECORD_DEFAULTS = {
+    "source_urls": [],
     "restrictions": [],
     "graduation_window": None,
     "eligibility_detail": None,

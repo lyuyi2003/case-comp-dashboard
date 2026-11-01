@@ -6,6 +6,13 @@
   <title>Case Comp Tracker</title>
   <meta name="description" content="Business and consulting case competitions for NUS AY2026/27 Semester 2.">
   <link rel="stylesheet" href="assets/style.css">
+  <script>
+    // Runs before the page appears, so a saved theme doesn't flash the wrong colours.
+    try {
+      const theme = localStorage.getItem("theme");
+      if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+    } catch (error) { /* Some browsers refuse storage. */ }
+  </script>
 </head>
 <body>
   <main class="page">
@@ -14,10 +21,13 @@
         <h1>Case Comp Tracker</h1>
         <p class="subtitle" id="semester-line">NUS Semester 2</p>
       </div>
-      <dl class="update-times">
-        <div><dt>Last updated</dt><dd id="last-updated">–</dd></div>
-        <div><dt>Next scheduled update</dt><dd id="next-update">–</dd></div>
-      </dl>
+      <div class="masthead-side">
+        <dl class="update-times">
+          <div><dt>Last updated</dt><dd id="last-updated">–</dd></div>
+          <div><dt>Next scheduled update</dt><dd id="next-update">–</dd></div>
+        </dl>
+        <button type="button" class="plain-button theme-toggle" id="theme-toggle">Switch to dark mode</button>
+      </div>
     </header>
 
     <div class="notice" id="stale-warning" hidden></div>

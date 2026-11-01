@@ -217,6 +217,91 @@ function officialLink(record) {
   });
 }
 
+/* ----- Add to calendar ----- */
+
+// Calendar files treat some characters as commands, so these are made safe.
+function calendarText(text) {
+  return String(text)
+    .replace(/\\/g, "\\\\")
+    .replace(/;/g, "\\;")
+    .replace(/,/g, "\\,")
+    .replace(/\r?\n/g, "\\n");
+}
+
+// The calendar format limits a line to 75 bytes. Longer lines continue on the
+// next line, which starts with a space.
+function foldCalendarLine(line) {
+  const encoder = new TextEncoder();
+  const lines = [];
+  let current = "";
+  let size = 0;
+  for (const character of line) {
+    const bytes = encoder.encode(character).length;
+    if (size + bytes > 74) {
+      lines.push(current);
+      current = " ";
+      size = 1;
+    }
+    current += character;
+    size += bytes;
+  }
+  lines.push(current);
+  return lines.join("\r\n");
+}
+
+function calendarFile(record, stamp) {
+  const deadline = record.live.dates.registration_deadline;
+  const estimate = record.date_status === "expected";
+  const compact = (iso) => iso.replaceAll("-", "");
+  const url = safeUrl(record.official_url);
+  const description = estimate
+    ? `Estimated from the ${record.edition} edition, so this date is not confirmed. Check the official page.`
+    : "Check the official page before you sign up.";
+
+  const lines = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//Case Comp Tracker//EN",
+    "CALSCALE:GREGORIAN",
+    "METHOD:PUBLISH",
+    "BEGIN:VEVENT",
+    `UID:${record.id}-deadline@case-comp-tracker`,
+    `DTSTAMP:${stamp}`,
+    `DTSTART;VALUE=DATE:${compact(deadline)}`,
+    `DTEND;VALUE=DATE:${compact(Rules.addDays(deadline, 1))}`,
+    `SUMMARY:${calendarText(`${estimate ? "Estimated deadline" : "Deadline"}: ${record.name}`)}`,
+    `DESCRIPTION:${calendarText(url ? `${description} ${url}` : description)}`,
+    url && `URL:${new URL(url).href}`,
+    "BEGIN:VALARM",
+    "ACTION:DISPLAY",
+    "TRIGGER:-P3D",
+    `DESCRIPTION:${calendarText(`3 days until: ${record.name}`)}`,
+    "END:VALARM",
+    "END:VEVENT",
+    "END:VCALENDAR",
+  ];
+  return `${lines.filter(Boolean).map(foldCalendarLine).join("\r\n")}\r\n`;
+}
+
+function downloadCalendarFile(record) {
+  const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+  const file = new Blob([calendarFile(record, stamp)], { type: "text/calendar" });
+  const link = el("a", { href: URL.createObjectURL(file), download: `${record.id}-deadline.ics` });
+  link.click();
+  URL.revokeObjectURL(link.href);
+}
+
+function calendarButton(record) {
+  const deadline = record.live.dates.registration_deadline;
+  if (!deadline || deadline < today) return null;
+  const estimate = record.date_status === "expected";
+  return el("button", {
+    type: "button", class: "plain-button",
+    text: estimate ? "Add estimated deadline to calendar" : "Add deadline to calendar",
+    onclick: () => downloadCalendarFile(record),
+  });
+}
+
 function detailBlock(title, content) {
   return el("div", { class: "detail-block" }, [el("h3", { text: title }), content]);
 }
@@ -258,7 +343,7 @@ function details(record) {
   return el("div", { class: "card-details", id: panelId }, [
     el("p", { class: "description", text: record.description }),
     el("div", { class: "detail-grid" }, [
-      detailBlock("Key dates", keyDatesTable(record)),
+      detailBlock("Key dates", el("div", {}, [keyDatesTable(record), calendarButton(record)])),
       detailBlock("Team", el("div", {}, [
         el("p", { text: `Size: ${record.team_size}` }),
         record.team_rules !== record.team_size && el("p", { text: `Rules: ${record.team_rules}` }),
@@ -592,6 +677,30 @@ function renderTimeline() {
   byId("timeline").replaceChildren(...parts.filter(Boolean));
 }
 
+/* ----- Light and dark mode ----- */
+
+// Until you choose, the page follows your device's setting.
+function currentTheme() {
+  const chosen = document.documentElement.dataset.theme;
+  if (chosen) return chosen;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function showThemeButton() {
+  byId("theme-toggle").textContent = currentTheme() === "dark" ? "Switch to light mode" : "Switch to dark mode";
+}
+
+function setUpTheme() {
+  showThemeButton();
+  byId("theme-toggle").addEventListener("click", () => {
+    const theme = currentTheme() === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = theme;
+    showThemeButton();
+    // Some browsers refuse storage. The switch still works until the page closes.
+    try { localStorage.setItem("theme", theme); } catch (error) { /* Nothing to do. */ }
+  });
+}
+
 /* ----- Wiring it together ----- */
 
 function setView(view) {
@@ -676,6 +785,7 @@ function watchForNewDay() {
 }
 
 async function start() {
+  setUpTheme();
   setUpControls();
   try {
     const [data, config] = await Promise.all([
