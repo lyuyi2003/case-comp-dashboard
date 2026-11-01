@@ -258,6 +258,10 @@ def test_a_dead_source_can_be_replaced():
     assert saved["source_urls"][0]["last_verified"] == "2026-11-05"
 
 
+def test_the_number_of_searches_is_logged():
+    assert run(proposal={"searches": ["one", "two"]})[1]["searches_run"] == 2
+
+
 def test_a_failed_listing_page_is_logged():
     pages = [
         {"url": PAGE, "state": "unchanged"},

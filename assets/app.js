@@ -423,7 +423,9 @@ function renderChanges() {
     changeGroup("Pages that could not be read", (run.fetch_errors || []).map((e) => `${nameOf(e.id)}: ${e.error}`)),
   ].filter(Boolean);
 
-  const summary = el("p", { class: "muted-text", text: `Update on ${formatMoment(run.run_time)}, ${plural(run.records_checked, "record")} checked.` });
+  const searches = run.searches_run === undefined ? ""
+    : `, ${run.searches_run} web ${run.searches_run === 1 ? "search" : "searches"}`;
+  const summary = el("p", { class: "muted-text", text: `Update on ${formatMoment(run.run_time)}, ${plural(run.records_checked, "record")} checked${searches}.` });
   const quiet = el("p", { text: "No changes in the last update." });
   body.replaceChildren(summary, ...(groups.length ? groups : [quiet]));
 }

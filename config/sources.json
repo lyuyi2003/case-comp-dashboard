@@ -15,6 +15,10 @@
     {
       "prefix": "https://www.kearney.com/",
       "reason": "Kearney refuses automated visitors, so it is checked through web search instead"
+    },
+    {
+      "prefix": "https://www.pwc.com/",
+      "reason": "PwC refuses automated visitors from the cloud, so it is checked through web search instead"
     }
   ],
   "listings": [
@@ -44,6 +48,6 @@
     "site:nus.edu.sg/cfg case competition 2027",
     "university case competition Singapore February 2027 registration",
     "business case challenge Singapore students March 2027",
-    "Kearney OR SUSS case competition Singapore 2027"
+    "Kearney OR SUSS OR PwC case competition Singapore 2027"
   ]
 }

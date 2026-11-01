@@ -28,6 +28,10 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
+# Imported here so that a broken setup stops the run straight away, instead of
+# making every PDF look like a page that failed to load.
+from pypdf import PdfReader
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from rules import PROJECT_ROOT
 
@@ -95,8 +99,6 @@ def html_to_text(page):
 
 
 def pdf_to_text(body):
-    from pypdf import PdfReader
-
     # The PDF library prints long warnings about fonts that don't affect the text.
     logging.getLogger("pypdf").setLevel(logging.CRITICAL)
     reader = PdfReader(io.BytesIO(body))

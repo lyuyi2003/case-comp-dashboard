@@ -216,6 +216,7 @@ def apply_update(data, proposal, report_pages, overrides, settings, now, today):
     log = {
         "run_time": now,
         "records_checked": len(records),
+        "searches_run": len(proposal.get("searches", [])),
         "new_competitions": [],
         "fields_changed": [],
         "fetch_errors": [],

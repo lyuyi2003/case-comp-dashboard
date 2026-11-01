@@ -8,7 +8,9 @@ You are updating a dashboard of case competitions for an NUS undergraduate. Work
 
 **Stay in scope.** Only run the commands listed here. Only write `.cache/proposed-update.json`. Never edit any other file by hand, and never change code, settings or `data/manual-overrides.json`.
 
-**Use effort carefully.** Read only the pages this process flags. Use at most 10 web searches and 10 web fetches per run. If you run out, stop checking and save what you have: anything unchecked is picked up next time.
+**Finding new competitions is the main job.** Steps 3 and 4 are required on every run, even if no pages changed. Don't skip them to save effort.
+
+**Stay within the limits.** Read only the pages this process flags. Use at most 10 web searches and 10 web fetches per run. If you run out, stop checking and save what you have: anything unchecked is picked up next time.
 
 ### Accuracy
 
@@ -22,9 +24,12 @@ You are updating a dashboard of case competitions for an NUS undergraduate. Work
 ## Step 1: Set up and fetch
 
 ```
-pip install -r requirements.txt
-python scripts/fetch_pages.py
+python3 -m venv .venv || /usr/bin/python3 -m venv .venv
+.venv/bin/python -m pip install -q -r requirements.txt
+.venv/bin/python scripts/fetch_pages.py
 ```
+
+Use `.venv/bin/python` for every script in these instructions. Machines can have several Python versions, and this keeps everything on one.
 
 This creates `.cache/fetch-report.json`. Each page has a `state`:
 
@@ -54,13 +59,15 @@ When official dates appear for a newer edition, update the record like this:
 
 ## Step 3: Check blocked records with search
 
-Use up to 4 searches on records that only have `blocked` sources. Check the ones with the oldest `last_verified` first, and prefer competitions with an upcoming deadline.
+Run exactly 3 searches on records that only have `blocked` sources. Check the ones with the oldest `last_verified` first, and prefer competitions with an upcoming deadline.
 
 If a search result shows that the blocked page says the same thing as the record, add that page's URL to `reviewed_urls`. Any new facts you use get `"method": "search-index"`.
 
 ## Step 4: Look for new competitions
 
-Use the changed listing pages, then the remaining searches, starting from `search_queries` in `config/sources.json`.
+Read the changed listing pages, then run every query in `search_queries` in `config/sources.json`. That's 7 searches, and together with Step 3 it uses the full budget.
+
+Follow up any competition you haven't seen before: use web fetches to open its official page. Telegram posts and search results are only leads.
 
 Propose a new competition only if all of these are true:
 
@@ -75,6 +82,7 @@ Write `.cache/proposed-update.json`:
 
 ```json
 {
+  "searches": ["every search query you ran"],
   "reviewed_urls": ["https://example.com/page-you-read"],
   "updates": [
     {
@@ -109,11 +117,11 @@ If nothing changed, still write the file with the `reviewed_urls` you checked an
 ## Step 6: Apply and publish
 
 ```
-python scripts/apply_update.py
+.venv/bin/python scripts/apply_update.py
 ```
 
 - If it prints `NOT SAVED`, fix the problems it lists in your proposal and run it again, up to 2 more times.
-- If it still fails, run `python scripts/apply_update.py --record-failure "short description"`.
+- If it still fails, run `.venv/bin/python scripts/apply_update.py --record-failure "short description"`.
 
 Then publish only the data folder, directly to the main branch:
 
@@ -123,4 +131,4 @@ git commit -m "Update competition data"
 git push origin main
 ```
 
-Finish with a short summary: pages changed, competitions updated or added, anything rejected, and anything the owner should look at.
+Finish with a short summary: pages changed, searches run, competitions updated or added, anything rejected, and anything the owner should look at.
