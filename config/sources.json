@@ -1,0 +1,49 @@
+{
+  "skip": [
+    {
+      "prefix": "https://nus.edu.sg/cfg/",
+      "reason": "NUS CFG refuses automated visitors, so it is checked through web search instead"
+    },
+    {
+      "prefix": "https://www.nus.edu.sg/cfg/",
+      "reason": "NUS CFG refuses automated visitors, so it is checked through web search instead"
+    },
+    {
+      "prefix": "https://www.suss.edu.sg/",
+      "reason": "SUSS refuses automated visitors, so it is checked through web search instead"
+    },
+    {
+      "prefix": "https://www.kearney.com/",
+      "reason": "Kearney refuses automated visitors, so it is checked through web search instead"
+    }
+  ],
+  "listings": [
+    { "name": "NUS sustainability mailers", "url": "https://sustainability.nus.edu.sg/", "type": "official" },
+    { "name": "NTU events", "url": "https://www.ntu.edu.sg/news-events/events", "type": "official" },
+    { "name": "SMU news", "url": "https://news.smu.edu.sg/", "type": "official" },
+    { "name": "SIT news", "url": "https://www.singaporetech.edu.sg/newsroom", "type": "official" },
+    { "name": "SUTD events", "url": "https://www.sutd.edu.sg/About/happenings/Events", "type": "official" },
+    { "name": "Accenture Singapore students", "url": "https://www.accenture.com/sg-en/careers/life-at-accenture/internships-students", "type": "official" },
+    { "name": "PwC Singapore students", "url": "https://www.pwc.com/sg/en/careers/students.html", "type": "official" },
+    { "name": "Deloitte Singapore students", "url": "https://www.deloitte.com/southeast-asia/en/careers/students.html", "type": "official" },
+    { "name": "EY Singapore students", "url": "https://www.ey.com/en_sg/careers/student-entry-level-programs", "type": "official" },
+    { "name": "KPMG Singapore graduates", "url": "https://kpmg.com/sg/en/careers/graduates/university-graduate-opportunities.html", "type": "official" },
+    { "name": "McKinsey students", "url": "https://www.mckinsey.com/careers/students", "type": "official" },
+    { "name": "BCG Southeast Asia campus", "url": "https://careers.bcg.com/global/en/on-campus/southeast-asia", "type": "official" },
+    { "name": "Bain students", "url": "https://www.bain.com/careers/work-with-us/students/", "type": "official" },
+    { "name": "Oliver Wyman Asia Pacific", "url": "https://www.oliverwyman.com/careers/recruiting-events/asia-pacific.html", "type": "official" },
+    { "name": "L.E.K. careers", "url": "https://www.lek.com/careers", "type": "official" },
+    { "name": "Accuracy careers", "url": "https://www.accuracy.com/careers", "type": "official" },
+    { "name": "Hackathons in SG", "url": "https://t.me/s/hackathonsinsg", "type": "lead" },
+    { "name": "Hack Business Connect", "url": "https://t.me/s/hackBusinessConnect", "type": "lead" }
+  ],
+  "search_queries": [
+    "case competition Singapore 2027",
+    "case challenge undergraduates Singapore January 2027",
+    "consulting case competition register by December 2026",
+    "site:nus.edu.sg/cfg case competition 2027",
+    "university case competition Singapore February 2027 registration",
+    "business case challenge Singapore students March 2027",
+    "Kearney OR SUSS case competition Singapore 2027"
+  ]
+}

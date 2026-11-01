@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Case competition data file",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_at", "competitions"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "competitions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/competition" }
+    }
+  },
+  "$defs": {
+    "date_or_null": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "sem2_relevance": {
+      "enum": ["in-sem2", "registers-before-sem2", "runs-after-sem2", "outside-sem2"]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "used_for", "fields", "source_type", "method", "last_verified"],
+      "properties": {
+        "url": { "type": "string", "pattern": "^https?://" },
+        "used_for": { "type": "string", "minLength": 3 },
+        "fields": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "registration_opens", "registration_deadline", "case_release",
+              "submission_deadline", "finals", "eligibility_text", "team_size",
+              "team_rules", "prizes", "format", "description", "edition"
+            ]
+          }
+        },
+        "source_type": { "enum": ["organiser", "university", "firm", "news"] },
+        "method": { "enum": ["page-read", "search-index"] },
+        "last_verified": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }
+      }
+    },
+    "history_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["timestamp", "field", "old_value", "new_value"],
+      "properties": {
+        "timestamp": { "type": "string", "format": "date-time" },
+        "field": { "type": "string" },
+        "old_value": {},
+        "new_value": {}
+      }
+    },
+    "competition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "name", "organiser", "category", "description", "format", "team_size",
+        "team_rules", "eligibility_text", "restrictions", "graduation_window",
+        "eligibility_detail", "eligible_for_me", "eligibility_reason", "prizes",
+        "edition", "date_status", "registration_opens", "registration_deadline",
+        "case_release", "submission_deadline", "finals", "sem2_relevance",
+        "sem2_manual", "sem2_manual_reason", "organiser_says_open", "status",
+        "official_url", "source_urls", "last_verified", "first_seen", "stale",
+        "fetch_error", "notes", "history"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "name": { "type": "string", "minLength": 3 },
+        "organiser": { "type": "string", "minLength": 2 },
+        "category": {
+          "enum": [
+            "consulting/strategy", "sustainability", "finance", "marketing",
+            "policy/economics", "insurance/risk", "supply-chain", "social-impact", "other"
+          ]
+        },
+        "description": { "type": "string", "minLength": 40 },
+        "format": { "type": "string", "minLength": 2 },
+        "team_size": { "type": "string", "minLength": 1 },
+        "team_rules": { "type": "string", "minLength": 2 },
+        "eligibility_text": { "type": "string", "minLength": 5 },
+        "restrictions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "penultimate-only", "penultimate-or-above", "final-year-only", "mba-only",
+              "postgrad-only", "pre-university-only", "business-only", "women-only",
+              "international-students-only", "citizens-only", "citizens-or-pr-only",
+              "same-university-team", "team-composition", "age-limit",
+              "background-required", "unclear"
+            ]
+          }
+        },
+        "graduation_window": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["from", "to"],
+              "properties": {
+                "from": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$" },
+                "to": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$" }
+              }
+            }
+          ]
+        },
+        "eligibility_detail": { "type": ["string", "null"] },
+        "eligible_for_me": { "enum": ["yes", "check", "no"] },
+        "eligibility_reason": { "type": "string", "minLength": 3 },
+        "prizes": { "type": "string", "minLength": 2 },
+        "edition": { "type": "string", "pattern": "^[0-9]{4}" },
+        "date_status": { "enum": ["confirmed", "expected", "unknown"] },
+        "registration_opens": { "$ref": "#/$defs/date_or_null" },
+        "registration_deadline": { "$ref": "#/$defs/date_or_null" },
+        "case_release": { "$ref": "#/$defs/date_or_null" },
+        "submission_deadline": { "$ref": "#/$defs/date_or_null" },
+        "finals": { "$ref": "#/$defs/date_or_null" },
+        "sem2_relevance": { "$ref": "#/$defs/sem2_relevance" },
+        "sem2_manual": {
+          "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/sem2_relevance" }]
+        },
+        "sem2_manual_reason": { "type": ["string", "null"] },
+        "organiser_says_open": { "type": "boolean" },
+        "status": {
+          "enum": [
+            "not-yet-open", "open", "closing-soon", "closed", "ongoing", "ended", "unconfirmed"
+          ]
+        },
+        "official_url": { "type": ["string", "null"], "pattern": "^https?://" },
+        "source_urls": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/source" }
+        },
+        "last_verified": { "type": "string", "format": "date-time" },
+        "first_seen": { "type": "string", "format": "date-time" },
+        "stale": { "type": "boolean" },
+        "fetch_error": { "type": ["string", "null"] },
+        "notes": { "type": "string" },
+        "history": { "type": "array", "items": { "$ref": "#/$defs/history_entry" } }
+      }
+    }
+  }
+}

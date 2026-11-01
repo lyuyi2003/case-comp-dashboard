@@ -1,0 +1,33 @@
+{
+  "academic_year": "AY2026/27",
+  "academic_year_start": 2026,
+  "semester_2": {
+    "start": "2027-01-11",
+    "end": "2027-05-08",
+    "source_url": "https://nus.edu.sg/registrar/docs/default-source/calendar/ay2026-2027.pdf",
+    "source_version": "NUS Registrar academic calendar, version dated 30/07/2026",
+    "last_verified": "2026-11-01"
+  },
+  "registration_window_start": "2026-10-01",
+  "timeline": {
+    "start": "2026-10-01",
+    "end": "2027-05-31"
+  },
+  "closing_soon_days": 14,
+  "new_badge_days": 7,
+  "first_load_date": "2026-11-01",
+  "stale_warning_days": 5,
+  "blocked_stale_days": 14,
+  "schedule": {
+    "enabled": false,
+    "weekdays": [1, 4],
+    "hour_sgt": 8
+  },
+  "profile": {
+    "year_of_study": 1,
+    "faculty": "Arts & Social Sciences",
+    "expected_graduation_year": 2030,
+    "nationality": "singapore-citizen",
+    "not_eligible_for": ["women-only"]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "runs": [
+    {
+      "run_time": "2026-11-01T23:16:50+08:00",
+      "records_checked": 34,
+      "new_competitions": [],
+      "fields_changed": [
+        {
+          "id": "accenture-uic",
+          "field": "official_url",
+          "old_value": "https://nus.edu.sg/cfg/events/details/a0d9394b5fcfe4ecb36263440b4d20df",
+          "new_value": "https://www.accenture.com/sg-en/careers/life-at-accenture/internships-students"
+        },
+        {
+          "id": "accenture-uic",
+          "field": "prizes",
+          "old_value": "Not stated in the sources checked",
+          "new_value": "Prizes for the top 3 teams and a chance of a role with Accenture Singapore (amounts not stated)"
+        },
+        {
+          "id": "accenture-uic",
+          "field": "notes",
+          "old_value": "The application has two steps: interest form by 5 Dec 2025, then a written response on AI and data by 14 Dec 2025 (both 6pm). Conflict: the NUS page shows an event date of 10 Dec 2025, while a SUSS report says the challenge ran 12–23 Jan 2026. The January window is kept because it matches your lead and fits the rest of the timeline, but it rests on the SUSS report alone. NUS CFG blocks automated visits, so this was read through a search index, not the page itself. Open the page once in your browser to confirm.",
+          "new_value": "The application has two steps: interest form by 5 Dec 2025, then a written response on AI and data by 14 Dec 2025 (both 6pm). Date conflict settled: the NUS page shows an event date of 10 Dec 2025, but Accenture's own page says the challenge is held around January each year over two weeks, which matches the SUSS report of 12–23 Jan 2026. The exact January dates still rest on the SUSS report. NUS CFG blocks automated visits, so its page was read through a search index. Open it once in your browser to confirm."
+        },
+        {
+          "id": "sbcc-africa-challenge",
+          "field": "official_url",
+          "old_value": "https://clubs.ntu.edu.sg/businesssolutions/sbcc/",
+          "new_value": "https://www.ntu.edu.sg/cas/programmes/african-challenge-business-case-competition"
+        },
+        {
+          "id": "sbcc-africa-challenge",
+          "field": "notes",
+          "old_value": "Your lead said it launches around late February, but no official page gives the opening or sign-up deadline. Past finals were also in late March.",
+          "new_value": "Your lead said it launches around late February, but no official page gives the opening or sign-up deadline. Past finals were also in late March. The organising club's own page (clubs.ntu.edu.sg/businesssolutions/sbcc) no longer loads, so the NTU programme page is used instead."
+        },
+        {
+          "id": "pg-peakathon",
+          "field": "official_url",
+          "old_value": "https://www.pgcareers.com/global/en/AMA-PEAKathon-2025",
+          "new_value": "https://pgcareers.com/apac/en/peakathon"
+        },
+        {
+          "id": "pg-peakathon",
+          "field": "notes",
+          "old_value": "Hidden as your brief asked, but note the 2025 edition's regional finals were in January 2026. If you signed up this October, it may fall in Sem 2. No 2026 page was found, so a 2026 edition is unconfirmed.",
+          "new_value": "Hidden as your brief asked, but note the 2025 edition's regional finals were in January 2026. If you signed up this October, it may fall in Sem 2. No 2026 page was found, so a 2026 edition is unconfirmed. P&G's 2025 page has gone, and its regional page still shows the 2023 edition."
+        }
+      ],
+      "fetch_errors": [],
+      "rejected": []
+    }
+  ]
+}

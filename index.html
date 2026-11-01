@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Comp Tracker</title>
+  <meta name="description" content="Business and consulting case competitions for NUS AY2026/27 Semester 2.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div>
+        <h1>Case Comp Tracker</h1>
+        <p class="subtitle" id="semester-line">NUS Semester 2</p>
+      </div>
+      <dl class="update-times">
+        <div><dt>Last updated</dt><dd id="last-updated">–</dd></div>
+        <div><dt>Next scheduled update</dt><dd id="next-update">–</dd></div>
+      </dl>
+    </header>
+
+    <div class="notice" id="stale-warning" hidden></div>
+    <div class="notice" id="load-error" hidden></div>
+
+    <section class="stats" aria-label="Summary">
+      <div class="stat"><span class="stat-value" id="stat-open">–</span><span class="stat-label">Open now</span></div>
+      <div class="stat"><span class="stat-value" id="stat-closing">–</span><span class="stat-label">Closing within 14 days</span></div>
+      <div class="stat"><span class="stat-value" id="stat-not-open">–</span><span class="stat-label">Not yet open</span></div>
+      <div class="stat"><span class="stat-value" id="stat-new">–</span><span class="stat-label">New this week</span></div>
+    </section>
+    <p class="stats-note" id="stats-note"></p>
+
+    <details class="changes" id="changes" open>
+      <summary>What changed since last update</summary>
+      <div id="changes-body"></div>
+    </details>
+
+    <section class="controls" aria-label="Search and filters">
+      <label class="field search">
+        <span>Search</span>
+        <input type="search" id="search" placeholder="Name, organiser or keyword" autocomplete="off">
+      </label>
+      <details id="filter-panel" open>
+        <summary id="filter-summary">Filters and sort</summary>
+        <div class="filter-body">
+          <div class="filter-row">
+            <label class="field"><span>Status</span><select id="filter-status"></select></label>
+            <label class="field"><span>Category</span><select id="filter-category"></select></label>
+            <label class="field"><span>Eligibility</span><select id="filter-eligibility"></select></label>
+            <label class="field"><span>Dates</span><select id="filter-dates"></select></label>
+            <label class="field"><span>Format</span><select id="filter-format"></select></label>
+            <label class="field">
+              <span>Sort by</span>
+              <select id="sort">
+                <option value="deadline">Soonest deadline</option>
+                <option value="finals">Soonest finals</option>
+                <option value="name">Name</option>
+                <option value="recent">Recently added</option>
+              </select>
+            </label>
+          </div>
+          <div class="toggle-row">
+            <label class="toggle"><input type="checkbox" id="show-outside"> Show out-of-semester</label>
+            <label class="toggle"><input type="checkbox" id="show-not-eligible"> Show not-eligible</label>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <div class="view-bar">
+      <div class="tabs" role="tablist" aria-label="View">
+        <button type="button" role="tab" id="tab-list" aria-controls="view-list" aria-selected="true">List</button>
+        <button type="button" role="tab" id="tab-timeline" aria-controls="view-timeline" aria-selected="false">Timeline</button>
+      </div>
+      <p class="result-count" id="result-count" role="status"></p>
+    </div>
+
+    <section id="view-list" role="tabpanel" aria-labelledby="tab-list">
+      <div class="list-header" aria-hidden="true">
+        <span>Competition</span><span>Status</span><span>Registration deadline</span><span>Dates</span><span>Eligibility</span><span></span>
+      </div>
+      <div id="competition-list"></div>
+    </section>
+
+    <section id="view-timeline" role="tabpanel" aria-labelledby="tab-timeline" hidden>
+      <div id="timeline"></div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Always confirm dates and rules on the official page before you sign up.</p>
+      <p id="semester-source"></p>
+    </footer>
+  </main>
+
+  <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+  <noscript><p class="notice">This page needs JavaScript to show the competitions.</p></noscript>
+  <script src="assets/rules.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
