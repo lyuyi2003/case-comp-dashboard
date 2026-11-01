@@ -19,7 +19,7 @@
   "stale_warning_days": 5,
   "blocked_stale_days": 14,
   "schedule": {
-    "enabled": false,
+    "enabled": true,
     "weekdays": [1, 4],
     "hour_sgt": 8
   },
