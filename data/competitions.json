@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-02T00:20:25+08:00",
+  "generated_at": "2026-11-02T08:04:08+08:00",
   "competitions": [
     {
       "id": "accenture-uic",
@@ -73,7 +73,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -167,7 +167,7 @@
           "last_verified": "2026-11-01"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -230,7 +230,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -282,7 +282,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -339,7 +339,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -393,7 +393,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -447,7 +447,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -518,7 +518,7 @@
           "last_verified": "2026-11-01"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -580,7 +580,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -630,10 +630,10 @@
           ],
           "source_type": "university",
           "method": "search-index",
-          "last_verified": "2026-11-01"
+          "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-01T23:16:50+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -751,7 +751,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -833,7 +833,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -930,7 +930,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -987,7 +987,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1045,7 +1045,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1103,7 +1103,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1176,7 +1176,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1319,7 +1319,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1382,7 +1382,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1512,7 +1512,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1626,7 +1626,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1681,7 +1681,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1734,7 +1734,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1900,7 +1900,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -2016,7 +2016,7 @@
           "last_verified": "2026-11-02"
         }
       ],
-      "last_verified": "2026-11-02T00:20:25+08:00",
+      "last_verified": "2026-11-02T08:04:08+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
