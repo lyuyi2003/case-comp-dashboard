@@ -92,6 +92,28 @@
         }
       ],
       "rejected": []
+    },
+    {
+      "run_time": "2026-11-09T08:10:17+08:00",
+      "records_checked": 34,
+      "searches_run": 10,
+      "new_competitions": [],
+      "fields_changed": [],
+      "fetch_errors": [
+        {
+          "id": "SIT news",
+          "error": "HTTP 404"
+        },
+        {
+          "id": "McKinsey students",
+          "error": "TimeoutError: The read operation timed out"
+        },
+        {
+          "id": "Oliver Wyman Asia Pacific",
+          "error": "HTTP 403"
+        }
+      ],
+      "rejected": []
     }
   ]
 }
