@@ -114,6 +114,24 @@
         }
       ],
       "rejected": []
+    },
+    {
+      "run_time": "2026-11-12T08:11:13+08:00",
+      "records_checked": 34,
+      "searches_run": 10,
+      "new_competitions": [],
+      "fields_changed": [],
+      "fetch_errors": [
+        {
+          "id": "ubs-finance-challenge",
+          "error": "NUS CFG refuses automated visitors, so it is checked through web search instead"
+        },
+        {
+          "id": "McKinsey students",
+          "error": "TimeoutError: The read operation timed out"
+        }
+      ],
+      "rejected": []
     }
   ]
 }
