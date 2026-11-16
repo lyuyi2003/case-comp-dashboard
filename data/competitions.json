@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T08:11:13+08:00",
+  "generated_at": "2026-11-16T08:09:58+08:00",
   "competitions": [
     {
       "id": "accenture-uic",
@@ -70,10 +70,10 @@
           ],
           "source_type": "organiser",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -140,7 +140,7 @@
           ],
           "source_type": "organiser",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         },
         {
           "url": "https://brandstorm2026.loreal.com/en",
@@ -154,7 +154,7 @@
           ],
           "source_type": "organiser",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         },
         {
           "url": "https://nus.edu.sg/cfg/events/details/03ed196db28a8f6d3d9768eb5f61ac59",
@@ -167,7 +167,7 @@
           "last_verified": "2026-11-01"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -227,10 +227,10 @@
           ],
           "source_type": "university",
           "method": "search-index",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -279,10 +279,10 @@
           ],
           "source_type": "organiser",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -336,10 +336,10 @@
           ],
           "source_type": "organiser",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -390,10 +390,10 @@
           ],
           "source_type": "university",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -444,10 +444,10 @@
           ],
           "source_type": "university",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -494,7 +494,7 @@
           ],
           "source_type": "university",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         },
         {
           "url": "https://sustainability.nus.edu.sg/wp-content/uploads/2026/04/10-April-2026-Support-top-teams-from-SGFIN-Singlife-case-competition.pdf",
@@ -505,7 +505,7 @@
           ],
           "source_type": "university",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         },
         {
           "url": "https://sgfin.nus.edu.sg/?p=11796",
@@ -518,7 +518,7 @@
           "last_verified": "2026-11-01"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -577,10 +577,10 @@
           ],
           "source_type": "university",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -630,10 +630,10 @@
           ],
           "source_type": "university",
           "method": "search-index",
-          "last_verified": "2026-11-05"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-05T08:10:03+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -685,10 +685,10 @@
           ],
           "source_type": "university",
           "method": "search-index",
-          "last_verified": "2026-11-01"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-01T23:16:50+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -738,7 +738,7 @@
           ],
           "source_type": "university",
           "method": "search-index",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         },
         {
           "url": "https://www.ntu.edu.sg/cas/programmes/african-challenge-business-case-competition",
@@ -748,10 +748,10 @@
           ],
           "source_type": "university",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -817,7 +817,7 @@
           ],
           "source_type": "organiser",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         },
         {
           "url": "https://sustainability.nus.edu.sg/wp-content/uploads/2026/02/27-Feb-2026-CDL-GCNS-updated.pdf",
@@ -830,10 +830,10 @@
           ],
           "source_type": "university",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -932,8 +932,8 @@
       ],
       "last_verified": "2026-11-12T08:11:13+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
-      "stale": false,
-      "fetch_error": null,
+      "stale": true,
+      "fetch_error": "Could not connect: [Errno 104] Connection reset by peer",
       "notes": "The page gives days and months but no year; 2026 comes from the page address and weekday pattern. A mandatory information session was on 2 Apr. All members must be free for the live finals.",
       "history": []
     },
@@ -984,10 +984,10 @@
           ],
           "source_type": "university",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1042,10 +1042,10 @@
           ],
           "source_type": "organiser",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1100,10 +1100,10 @@
           ],
           "source_type": "organiser",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1173,10 +1173,10 @@
           ],
           "source_type": "university",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1270,8 +1270,8 @@
       ],
       "last_verified": "2026-11-01T23:16:50+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
-      "stale": false,
-      "fetch_error": null,
+      "stale": true,
+      "fetch_error": "NUS CFG refuses automated visitors, so it is checked through web search instead",
       "notes": "Still running, but its timing moved. The 2025 edition ran March to May, and the 2026 edition ran around July (finalists were told by 10 Jul). No exact 2026 sign-up date was found, so none is stored. If 2027 returns to March, it would fit Sem 2: worth watching. NUS CFG blocks automated visits, so this was read through a search index, not the page itself. Open the page once in your browser to confirm.",
       "history": []
     },
@@ -1316,10 +1316,10 @@
           ],
           "source_type": "news",
           "method": "search-index",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1379,10 +1379,10 @@
           ],
           "source_type": "firm",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1454,8 +1454,8 @@
       ],
       "last_verified": "2026-11-01T23:16:50+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
-      "stale": false,
-      "fetch_error": null,
+      "stale": true,
+      "fetch_error": "NUS CFG refuses automated visitors, so it is checked through web search instead",
       "notes": "The competition ran July to October 2026. NUS CFG blocks automated visits, so this was read through a search index, not the page itself. Open the page once in your browser to confirm.",
       "history": []
     },
@@ -1509,10 +1509,10 @@
           ],
           "source_type": "firm",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1568,8 +1568,8 @@
       ],
       "last_verified": "2026-11-01T23:16:50+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
-      "stale": false,
-      "fetch_error": null,
+      "stale": true,
+      "fetch_error": "NUS CFG refuses automated visitors, so it is checked through web search instead",
       "notes": "The NUS listing says all undergraduates, Masters students and fresh graduates; the women-only rule comes from the programme's name and your brief. NUS CFG blocks automated visits, so this was read through a search index, not the page itself. Open the page once in your browser to confirm.",
       "history": []
     },
@@ -1623,10 +1623,10 @@
           ],
           "source_type": "organiser",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1678,10 +1678,10 @@
           ],
           "source_type": "university",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1731,10 +1731,10 @@
           ],
           "source_type": "firm",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1791,8 +1791,8 @@
       ],
       "last_verified": "2026-11-01T23:16:50+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
-      "stale": false,
-      "fetch_error": null,
+      "stale": true,
+      "fetch_error": "The site refused automated visitors",
       "notes": "The BBA-only rule comes from your brief; no official page states it. Ask the club if you are interested.",
       "history": []
     },
@@ -1825,7 +1825,7 @@
       "sem2_manual": null,
       "sem2_manual_reason": null,
       "organiser_says_open": false,
-      "status": "closed",
+      "status": "ended",
       "official_url": "https://nus.edu.sg/cfg/events/details/4315",
       "source_urls": [
         {
@@ -1845,10 +1845,17 @@
       ],
       "last_verified": "2026-11-01T23:16:50+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
-      "stale": false,
-      "fetch_error": null,
+      "stale": true,
+      "fetch_error": "NUS CFG refuses automated visitors, so it is checked through web search instead",
       "notes": "Found during research. Sign-ups closed before you started this project. NUS CFG blocks automated visits, so this was read through a search index, not the page itself. Open the page once in your browser to confirm.",
-      "history": []
+      "history": [
+        {
+          "timestamp": "2026-11-16T08:09:58+08:00",
+          "field": "status",
+          "old_value": "closed",
+          "new_value": "ended"
+        }
+      ]
     },
     {
       "id": "iia-internal-audit",
@@ -1897,10 +1904,10 @@
           ],
           "source_type": "organiser",
           "method": "page-read",
-          "last_verified": "2026-11-12"
+          "last_verified": "2026-11-16"
         }
       ],
-      "last_verified": "2026-11-12T08:11:13+08:00",
+      "last_verified": "2026-11-16T08:09:58+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
       "stale": false,
       "fetch_error": null,
@@ -1951,8 +1958,8 @@
       ],
       "last_verified": "2026-11-01T23:16:50+08:00",
       "first_seen": "2026-11-01T12:00:00+08:00",
-      "stale": false,
-      "fetch_error": null,
+      "stale": true,
+      "fetch_error": "The site refused automated visitors",
       "notes": "Found during research. A Telegram post on 10 Dec 2025 said 2026 sign-ups were open, for teams of 2–4 with up to S$2,000 in prizes (lead only). No official 2026 or 2027 dates were found. The eligibility wording dates from the first edition.",
       "history": []
     },
